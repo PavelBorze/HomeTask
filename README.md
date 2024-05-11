@@ -3,34 +3,34 @@ Home assignment for a job application at Mishloha
 The application is built using the Model-View-ViewModel (MVVM) architecture pattern.  
 
 # A brief overview of the architecture:
-# Model:
+1. Model:
 The model layer is represented by the Repository classes. In this case the App
 does not have any specific business logic except for the data fetching from the remote server or
 local database.
 The data is fetched from the remote server or local database using Datasource classes,
 ReposPagingLocalDatasource and ReposPagingRemoteDatasource.
-# View:
+2. View:
 The view layer is represented by the Fragment classes, which is a Fragment. This layer is
 responsible for displaying the data received from the ViewModel. It observes the ViewModel to get
 the necessary data and updates the UI accordingly.  
-# ViewModel:
+3. ViewModel:
 The ViewModel layer is represented by the HomeViewModel and RepoViewModel classes. The ViewModel is
 responsible for preparing and managing the data for the view. It communicates with the model and
 exposes streams of data relevant to the view. The ViewModel does not know about the view, it only
 exposes the data streams. The ViewModel also survives configuration changes.
-# Database: 
+4. Database: 
 The application uses Room database for local data storage. The AppDatabase class is the abstract
 layer which provides DAO (Data Access Object) to handle the data operations.  
-# View Binding:
+5. View Binding:
 The application uses View binding.
-# Dependency Injection:
+6. Dependency Injection:
 The application uses Dagger Hilt for dependency injection. 
-# Coroutines: 
+7. Coroutines: 
 The application uses Kotlin Coroutines for handling asynchronous tasks.  
-# Paging: 
+8. Paging: 
 The application uses the Paging library to load and display pages of data from larger dataset from
 network or local storage.  
-# Navigation: 
+9. Navigation: 
 The application uses the Navigation component to navigate into, and back out from the different 
 pieces of content within the app.  
 
