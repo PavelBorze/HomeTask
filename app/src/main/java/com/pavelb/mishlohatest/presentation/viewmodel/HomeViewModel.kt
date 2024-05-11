@@ -35,7 +35,7 @@ class HomeViewModel @Inject constructor(
         liveData {
             if (selection == (SpinnerAction.FAVORITE)) {
                 emitSource(
-                    localRepoRepository.getAll()
+                    localRepoRepository.getAll().cachedIn(viewModelScope)
                 )
             } else {
                 emitSource(
