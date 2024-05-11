@@ -10,7 +10,7 @@ local database.
 The data is fetched from the remote server or local database using Datasource classes,
 ReposPagingLocalDatasource and ReposPagingRemoteDatasource.
 2. View:
-The view layer is represented by the Fragment classes, which is a Fragment. This layer is
+The view layer is represented by the Fragment classes. This layer is
 responsible for displaying the data received from the ViewModel. It observes the ViewModel to get
 the necessary data and updates the UI accordingly.  
 3. ViewModel:
