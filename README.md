@@ -37,7 +37,7 @@ pieces of content within the app.
 # Reasoning for some of the choices made:
 1. Most of the technologies used are an obvious default choice for an Android application.
 2. The project is built with Views instead of Composables because the companies projects I decompiled
-("com.mishloha.mishapp" and "com.sendiman.runner") were built with Views. I asked Yakir if I should
+("com.mishloha.mishapp" and "com.sendiman.runner") were built with Views. I've asked if I should
 use Composables or Views But didn't received any answer.
 3. The project uses Paging library to load and display pages of data from network or local storage. 
 I've never used this library before and thought that it is a good idea to test it here. This proved 
