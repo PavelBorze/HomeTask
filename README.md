@@ -42,8 +42,7 @@ use Composables or Views But didn't received any answer.
 3. The project uses Paging library to load and display pages of data from network or local storage. 
 I've never used this library before and thought that it is a good idea to test it here. This proved 
 to be a mistake as I found out that it is not possible to filter the data being fetched, in
-the adapter, as it is done usually. The filtering should be done in the DataSource, which i did not
-implement.
+the adapter, as it is done usually. 
 4. I used Glide for image loading. Glide has its own caching mechanism and it is easy to use. Also,
 I've noticed that the Companies projects I decompiled previously were using Glide.
 5. I didn't use DataBinding because it requires to use KAPT instead of KSP, so I've used ViewBinding
